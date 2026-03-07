@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+:root {
+  --black: #2c2c2c;
+  --white: #fefefe;
+
+  --background: #fefefe;
+  --modalOverlayBackground: #969696
+    /* --green: #bbf330;
+  --dark-green: #7eb101;
+  --yellow-main: #ffe550;
+  --black: #2c2c2c;
+  --white: #fefefe;
+  --pink: #ff705d;*/
+    /* --font-color1: #3d3d3d;
+  --font-color-2: #969696;
+  --font-color-3: #4a4a4a; */;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
