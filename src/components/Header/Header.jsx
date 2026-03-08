@@ -17,14 +17,12 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className="relative z-20 bg-white">
       <Container className="flex items-center justify-between">
-        {/* <NavLink to="catalog">
-          <a src={logo} alt="logo" className="w-25 h-20">
-            Каталог
-          </a>
-        </NavLink> */}
-        <button className="" onClick={handleClick}>
+        <button
+          className="glass-link transition-all duration-300 hover:translate-x-2"
+          onClick={handleClick}
+        >
           Каталог
         </button>
 

@@ -47,3 +47,30 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+.glass-link {
+  @apply relative px-5 py-2 rounded-xl transition-all duration-300 overflow-hidden;
+}
+
+.glass-link::before {
+  content: '';
+  @apply absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300;
+  background: linear-gradient(
+    120deg,
+    rgba(145, 138, 138, 0.25),
+    rgba(67, 56, 56, 0.25),
+    rgba(55, 53, 53, 0.25)
+  );
+}
+
+.glass-link:hover {
+  @apply backdrop-blur-lg bg-white/10 border border-white/20 scale-105 shadow-lg;
+}
+
+.glass-link:hover::before {
+  opacity: 1;
+}
+
+.glass-link-active {
+  @apply backdrop-blur-lg bg-white/20 border border-white/30;
+}

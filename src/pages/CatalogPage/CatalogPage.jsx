@@ -18,7 +18,7 @@ function CatalogPage() {
 
   return (
     <section className="mx-10">
-      <Container>
+      <Container className="">
         <h1>Каталог</h1>
         <p>Категорія: {title}</p>
       </Container>
