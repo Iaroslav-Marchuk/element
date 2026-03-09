@@ -11,10 +11,11 @@ function HeroSection() {
       <Container className="relative z-20 py-32">
         <div className="flex gap-10 h-full w-full">
           <div className="w-[80%]">
-            <h1 className="text-5xl font-semibold my-30">
+            <h1 className="font-bold text-[48px] my-30 leading-[1.2] w-[500px]">
               Точність у металі. Якість у деталях.
             </h1>
-            <h2 className="text-xl mb-30">
+
+            <h2 className="text-xl mb-30 leading-[1.43]">
               Виготовляємо паркани, ринви, димоходи та інші металеві вироби для
               надійності вашого дому.
             </h2>

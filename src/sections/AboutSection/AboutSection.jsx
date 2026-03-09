@@ -9,7 +9,12 @@ function AboutSection() {
             <img src="../../../public/pics/about.jpg" alt="metal" />
           </div>
           <div className="flex flex-col justify-center items-center w-[50%]">
-            <h2 className="text-xl mb-10">Про нас</h2>
+            <h2
+              className="font-bold text-[28px] mb-10 text-(--black)
+        md:text-[42px]"
+            >
+              Про нас
+            </h2>
             <p className="leading-normal">
               Уже понад 10 років ми займаємося виготовленням виробів з бляхи для
               дому та господарства. За цей час ми поєднали досвід, якісні
