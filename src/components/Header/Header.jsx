@@ -20,7 +20,7 @@ function Header() {
     <header className="relative z-20 bg-white">
       <Container className="flex items-center justify-between">
         <button
-          className="glass-link transition-all duration-300 hover:translate-x-2"
+          className="glass-link px-5 py-2 border border-gray-400 rounded-xl transition-all duration-300 hover:translate-x-2"
           onClick={handleClick}
         >
           Каталог
@@ -31,13 +31,13 @@ function Header() {
         </NavLink>
         <address>
           <ul className="flex flex-col gap-3">
-            <li>
+            <li className="hover:text-blue-500 transition-all duration-300">
               <a href="mailto:info@devstudio.com">element@gmail.com</a>
             </li>
-            <li>
+            <li className="hover:text-blue-500 transition-all duration-300">
               <a href="tel:+380978303655">+38 (097) 830-36-55 </a>
             </li>
-            <li>
+            <li className="hover:text-blue-500 transition-all duration-300">
               <a href="tel:+380971951219">+38 (097) 19-512-19 </a>
             </li>
           </ul>
