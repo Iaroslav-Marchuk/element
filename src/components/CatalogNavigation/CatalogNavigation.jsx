@@ -12,7 +12,7 @@ function CatalogNavigation({ onClose }) {
           />
 
           <NavLink
-            to={`/catalog/${cat.id}`}
+            to={`/catalog/${cat.folder}`}
             onClick={onClose}
             className={({ isActive }) =>
               `glass-link transition-all duration-300 hover:translate-x-2 ${

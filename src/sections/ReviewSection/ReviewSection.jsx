@@ -5,7 +5,7 @@ function ReviewSection() {
   return (
     <section
       className="relative w-full h-full bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: "url('/public/pics/review.jpg')" }}
+      style={{ backgroundImage: "url('/pics/review.jpg')" }}
     >
       <Container className="py-16">
         <h2 className="font-bold text-[42px] mb-5 text-(--white)">

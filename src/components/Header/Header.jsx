@@ -3,25 +3,20 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.jpg';
 
 import Container from '../Container/Container.jsx';
-import { useState } from 'react';
+
 import SideBar from '../SideBar/SideBar.jsx';
 import CatalogNavigation from '../CatalogNavigation/CatalogNavigation.jsx';
+import { useCatalog } from '../../hooks/useCatalog.js';
 
 function Header() {
-  const [sideBarIsOpen, setSideBarIsOpen] = useState(false);
-  const openModal = () => setSideBarIsOpen(true);
-  const closeModal = () => setSideBarIsOpen(false);
-
-  const handleClick = () => {
-    openModal();
-  };
+  const { isOpen, openCatalog, closeCatalog } = useCatalog();
 
   return (
     <header className="relative z-20 bg-white">
       <Container className="flex items-center justify-between">
         <button
           className="glass-link px-5 py-2 border border-gray-400 rounded-xl transition-all duration-300 hover:translate-x-2"
-          onClick={handleClick}
+          onClick={openCatalog}
         >
           Каталог
         </button>
@@ -44,8 +39,8 @@ function Header() {
         </address>
       </Container>
 
-      <SideBar isOpen={sideBarIsOpen} onClose={closeModal}>
-        <CatalogNavigation onClose={closeModal} />
+      <SideBar isOpen={isOpen} onClose={closeCatalog}>
+        <CatalogNavigation onClose={closeCatalog} />
       </SideBar>
     </header>
   );
