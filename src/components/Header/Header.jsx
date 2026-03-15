@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
+import SideBar from '../SideBar/SideBar.jsx';
+import Container from '../Container/Container.jsx';
+import CatalogNavigation from '../CatalogNavigation/CatalogNavigation.jsx';
+
 import logo from '../../assets/logo.jpg';
 
-import Container from '../Container/Container.jsx';
-
-import SideBar from '../SideBar/SideBar.jsx';
-import CatalogNavigation from '../CatalogNavigation/CatalogNavigation.jsx';
 import { useCatalog } from '../../hooks/useCatalog.js';
 
 function Header() {

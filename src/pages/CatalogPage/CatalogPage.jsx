@@ -1,10 +1,11 @@
 import { NavLink, useParams } from 'react-router-dom';
+import { MoveLeft } from 'lucide-react';
+
 import Container from '../../components/Container/Container.jsx';
+import GalleryList from '../../components/GalleryList/GalleryList.jsx';
 
 import catalogData from '../../../catalog.json';
-import GalleryList from '../../components/GalleryList/GalleryList.jsx';
 import { CATEGORIES } from '../../utils/constants.js';
-import { MoveLeft } from 'lucide-react';
 
 function CatalogPage() {
   const { categoryId } = useParams();
