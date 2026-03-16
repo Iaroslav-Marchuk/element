@@ -6,8 +6,8 @@ import logo from '../../assets/logo.jpg';
 
 function Footer() {
   return (
-    <footer className="h-25">
-      <Container className="flex flex-col items-center justify-center mt-5">
+    <footer>
+      <Container className="flex flex-col items-center justify-center">
         <NavLink
           to="main"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

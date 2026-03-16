@@ -15,9 +15,18 @@ function BestsellersSection() {
   return (
     <section className="py-16">
       <Container>
-        <div className="flex items-stretch gap-10 h-150">
-          <div className="flex flex-col gap-10 w-64  items-center justify-center">
-            <h2 className="text-4xl font-bold text-center leading-snug">
+        <div
+          className="flex flex-col items-stretch gap-10
+        md:flex-row md:h-150"
+        >
+          <div
+            className="flex flex-col w-full gap-10 items-center justify-center
+          md:w-64 "
+          >
+            <h2
+              className="text-[32px] font-bold text-center leading-snug
+            md:text-[42px]"
+            >
               Наші найкращі пропозиції
             </h2>
             <button
@@ -30,8 +39,9 @@ function BestsellersSection() {
             </button>
           </div>
 
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 h-75 md:h-full">
             <Swiper
+              className="w-full h-75 md:h-full"
               loop={true}
               autoplay={{
                 delay: 2500,
@@ -41,10 +51,9 @@ function BestsellersSection() {
               pagination={{ clickable: true }}
               navigation={true}
               modules={[Autoplay, EffectFade, Pagination, Navigation]}
-              className="w-full h-full"
             >
               {Array.from({ length: 10 }, (_, i) => (
-                <SwiperSlide key={i} className="w-full h-full">
+                <SwiperSlide key={i}>
                   <img
                     src={`/pics/bestsellers/${i + 1}.jpg`}
                     alt={`Bestseller ${i + 1}`}

@@ -1,6 +1,9 @@
 function Review({ review, avatar, name, adress }) {
   return (
-    <div className="p-3.5 bg-(--white) w-125 rounded-[28px] rounded-tl-none">
+    <div
+      className="p-3.5 bg-(--white) rounded-[28px] rounded-tl-none 
+    md:w-125 "
+    >
       <div className="mb-7">
         <ul className="flex gap-1">
           {Array(5)

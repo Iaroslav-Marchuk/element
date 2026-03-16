@@ -8,7 +8,10 @@ function ReviewSection() {
       style={{ backgroundImage: "url('/pics/review.jpg')" }}
     >
       <Container className="py-16">
-        <h2 className="font-bold text-[42px] mb-5 text-(--white)">
+        <h2
+          className="font-bold text-[32px] mb-5 text-(--white)
+        md:text-[42px]"
+        >
           Що про нас говорять
         </h2>
         <p className="mb-8 text-(--white) leading-[1.43]">

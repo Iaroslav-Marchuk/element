@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { Ellipsis } from 'lucide-react';
 
 import SideBar from '../SideBar/SideBar.jsx';
 import Container from '../Container/Container.jsx';
@@ -15,19 +16,23 @@ function Header() {
     <header className="relative z-20 bg-white">
       <Container className="flex items-center justify-between">
         <button
-          className="glass-link px-5 py-2 border border-gray-400 rounded-xl transition-all duration-300 hover:translate-x-2"
+          className="hidden md:flex md:items-center md:glass-link md:px-5 md:py-2 md:border md:border-gray-400 md:rounded-xl md:transition-all md:duration-300 md:hover:translate-x-2"
           onClick={openCatalog}
         >
           Каталог
         </button>
 
+        <button className="md:hidden" onClick={openCatalog}>
+          <Ellipsis />
+        </button>
+
         <NavLink to="main">
           <img src={logo} alt="logo" className="w-25 h-20" />
         </NavLink>
-        <address>
+        <address className="hidden md:flex">
           <ul className="flex flex-col gap-3">
             <li className="hover:text-blue-500 transition-all duration-300">
-              <a href="mailto:info@devstudio.com">element@gmail.com</a>
+              <a href="mailto:element@gmail.com">element@gmail.com</a>
             </li>
             <li className="hover:text-blue-500 transition-all duration-300">
               <a href="tel:+380978303655">+38 (097) 830-36-55 </a>

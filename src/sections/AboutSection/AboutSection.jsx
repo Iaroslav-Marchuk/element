@@ -4,12 +4,26 @@ function AboutSection() {
   return (
     <section>
       <Container className="py-16">
-        <div className="flex gap-10">
-          <div className="w-[50%]">
+        <div
+          className="flex flex-col gap-10
+        md:flex-row"
+        >
+          <div
+            className="w-full
+          md:w-[50%]"
+          >
             <img src="/pics/about.jpg" alt="metal" />
           </div>
-          <div className="flex flex-col justify-center items-center w-[50%]">
-            <h2 className="font-bold mb-10 text-[42px]">Про нас</h2>
+          <div
+            className="flex flex-col justify-center items-center w-full
+          md:w-[50%]"
+          >
+            <h2
+              className="font-bold mb-10 text-[32px]
+            md:text-[42px]"
+            >
+              Про нас
+            </h2>
             <p className="leading-normal">
               Уже понад 10 років ми займаємося виготовленням виробів з бляхи для
               дому та господарства. За цей час ми поєднали досвід, якісні

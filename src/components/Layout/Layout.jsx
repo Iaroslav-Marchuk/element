@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer.jsx';
 import Header from '../Header/Header.jsx';
 
 import { CatalogProvider } from '../../context/CatalogProvider.jsx';
+import FloatingContacts from '../FloatingContacts/FloatingContacts.jsx';
 
 function Layout() {
   return (
@@ -14,6 +15,7 @@ function Layout() {
           <Outlet />
         </main>
         <Footer />
+        <FloatingContacts />
       </div>
     </CatalogProvider>
   );
