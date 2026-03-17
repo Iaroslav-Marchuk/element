@@ -20,7 +20,7 @@ async function getAllImages() {
     const images = result.resources.map(r => ({
       id: r.public_id,
       url: r.secure_url,
-      folder: r.asset_folder, // беремо напряму з asset_folder
+      folder: r.asset_folder,
       width: r.width,
       height: r.height,
     }));
@@ -35,7 +35,6 @@ async function getAllImages() {
 async function main() {
   const images = await getAllImages();
 
-  // Групуємо по підпапках
   const byFolder = images.reduce((acc, img) => {
     const folder = img.folder;
     if (!acc[folder]) acc[folder] = [];

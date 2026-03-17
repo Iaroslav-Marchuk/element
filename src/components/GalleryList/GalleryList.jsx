@@ -8,7 +8,10 @@ function GalleryList({ images }) {
 
   return (
     <>
-      <ul className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
+      <ul
+        className="grid grid-cols-1 gap-4
+      md:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]"
+      >
         {images.map((img, index) => (
           <GalleryItem
             key={img.id}

@@ -16,20 +16,27 @@ function CatalogPage() {
     : [];
 
   return (
-    <section className="mx-10">
+    <section className="">
       <Container className="">
         <NavLink to="/main">
           <div
-            className="flex gap-2 w-70 items-center glass-link px-5 py-2 border border-gray-400 rounded-xl
-        transition-all duration-300 hover:translate-x-2 my-10"
+            className="flex gap-2 items-center glass-link px-5 py-
+             border border-gray-400 rounded-xl
+        transition-all duration-300 hover:translate-x-2 my-10
+        md:w-70"
           >
             <MoveLeft strokeWidth={1.5} />
             <span>Повернутися на головну</span>
           </div>
         </NavLink>
-        <h2 className="font-bold mb-10 text-[42px] text-center">Наша робота</h2>
+        <h2
+          className="font-bold mb-10 text-[32px] text-center
+        md:text-[42px] "
+        >
+          Наша робота
+        </h2>
         <p className="text-xl mb-10 leading-[1.43] text-center">
-          Категорія: {category?.name}
+          Категорія: {category.name}
         </p>
         <GalleryList images={images} />
       </Container>
